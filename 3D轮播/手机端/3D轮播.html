@@ -80,7 +80,7 @@
 	            //"bottom";
 	        }
 	    }
-	    var [startX,startY,moveX,moveY,endX,endY,angle] = [0,0,0,0,0,0,0];
+	    var startX=startY=moveX=moveY=endX=endY=angle=0;
 	    var classArr = ['special-before','special-right','special-after','special-left'];
 	    var urlArr = ['https://www.baidu.com/','http://www.hao123.com/','https://www.taobao.com/','https://www.jd.com/'];
 	    for(var i=0;i<4;i++){
@@ -100,7 +100,7 @@
 	    })
 	    $('#specialBanner').on('touchend',function (e) {
 	        startX==endX&&startY==endY ? '' : moveResult();
-	        [startX,startY,moveX,moveY,endX,endY,angle] = [0,0,0,0,0,0,0];
+	        startX=startY=moveX=moveY=endX=endY=angle=0;
 	    })
 	</script>
 </body>
